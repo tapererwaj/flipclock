@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+    <div class="flip-clock-wrapper">
+        <button onclick="flipCards(-1)">-</button>
+        <!-- tens -->
+        <div class="digit" id="tens" data-flipCard>
+            <div class="card-before"></div>
+            <div class="card-top" data-cardTop></div>
+            <div class="card-bottom" data-cardBottom></div>
+            <div class="card-after"></div>
+        </div>
+
+        <!-- units -->
+        <div class="digit" id="units" data-flipCard>
+            <div class="card-before"></div>
+            <div class="card-top" data-cardTop></div>
+            <div class="card-bottom" data-cardBottom></div>
+            <div class="card-after"></div>
+        </div>
+
+        <button onclick="flipCards(1)">+</button>
+    </div>
+</body>
+</html>
